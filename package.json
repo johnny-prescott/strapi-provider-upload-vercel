@@ -1,8 +1,11 @@
 {
-	"name": "strapi-provider-upload-vercel",
-	"version": "1.0.2",
+	"name": "@johnny-prescott/strapi-provider-upload-vercel",
+	"version": "1.0.3",
 	"description": "Vercel Blob provider for Strapi upload.",
-	"repository": "https://github.com/ainsleydev/strapi-provider-upload-vercel",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ainsleydev/strapi-provider-upload-vercel.git"
+	},
 	"license": "MIT",
 	"keywords": [
 		"strapi",
@@ -11,17 +14,9 @@
 		"vercel",
 		"blob"
 	],
-	"author": {
-		"name": "ainsley.dev LTD",
-		"email": "hello@ainsley.dev",
-		"url": "https://ainsley.dev"
-	},
+	"author": "ainsley.dev LTD <hello@ainsley.dev> (https://ainsley.dev)",
 	"maintainers": [
-		{
-			"name": "Ainsley Clark",
-			"email": "hello@ainsley.dev",
-			"url": "https://ainsley.dev"
-		}
+		"Ainsley Clark <hello@ainsley.dev> (https://ainsley.dev)"
 	],
 	"bugs": {
 		"url": "https://github.com/ainsleydev/strapi-provider-upload-vercel/issues"
@@ -51,5 +46,9 @@
 		"eslint-config-custom": "^0.0.0",
 		"prettier": "^3.0.3",
 		"tsconfig": "^7.0.0"
+	},
+	"homepage": "https://github.com/ainsleydev/strapi-provider-upload-vercel#readme",
+	"publishConfig": {
+		"@johnny-prescott:registry": "https://npm.pkg.github.com"
 	}
 }

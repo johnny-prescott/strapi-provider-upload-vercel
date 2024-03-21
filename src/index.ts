@@ -99,11 +99,10 @@ export = {
 			 * @remarks This requires a bit more work to implement, but it allows you to upload files up to 500 MB.
 			 */
 			checkFileSize(file: File) {
-				const maxUploadSizeInMB = 500,
-					kBytesToBytes = (kBytes: number) => kBytes * 1000;
-				if (kBytesToBytes(file.size) > maxUploadSizeInMB) {
-					throw new Error(`${file.name} exceeds size limit of ${maxUploadSizeInMB}'}.`);
-				}
+				var maxUploadSizeInMB = 500, kBytesToMegaBytes = function (kBytes) { return kBytes / 1000; };
+                if (kBytesToMegaBytes(file.size) > maxUploadSizeInMB) {
+                    throw new Error("".concat(file.name, " is ", kBytesToMegaBytes(file.size).toString(), "mb and exceeds size limit of ").concat(maxUploadSizeInMB.toString(), "mb'}."));
+                }
 			},
 			/**
 			 * Private is not currently supported by Vercel but is planned.
