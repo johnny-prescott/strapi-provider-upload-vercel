@@ -1,11 +1,8 @@
 name: Node.js Package
 
 on:
-  # release:
-  #   types: [created]
-  push:
-    branches:
-      - main
+  release:
+    types: [created]
 
 jobs:
   build:
@@ -15,8 +12,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 16
-      - run: pwd
-      - run: ls -la
       - run: npm ci
 
   publish-gpr:
