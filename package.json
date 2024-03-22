@@ -48,7 +48,4 @@
 		"tsconfig": "^7.0.0"
 	},
 	"homepage": "https://github.com/ainsleydev/strapi-provider-upload-vercel#readme",
-	"publishConfig": {
-		"@johnny-prescott:registry": "https://npm.pkg.github.com"
-	}
 }
